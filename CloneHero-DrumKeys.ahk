@@ -45,7 +45,7 @@ GreenIsOnRight() {
     pixels := CaptureScreen(rx, ry, rw, rh)
 
     count := 0, sumX := 0
-    step := 4
+    step := 8
     y := 0
     while (y < rh) {
         x := 0
@@ -61,7 +61,7 @@ GreenIsOnRight() {
         y += step
     }
 
-    if (count < 15) {
+    if (count < 8) {
         lastInfo := "green pixels: " count " (no highway, guitar keys)"
         return false
     }

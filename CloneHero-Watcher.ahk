@@ -10,9 +10,11 @@ DetectHiddenWindows(true)
 SetTitleMatchMode(2)
 
 Loop {
-    ProcessWait("Clone Hero.exe")
+    while !ProcessExist("Clone Hero.exe")
+        Sleep(2000)
     Run('"' A_AhkPath '" "' drumScript '"')
-    ProcessWaitClose("Clone Hero.exe")
+    while ProcessExist("Clone Hero.exe")
+        Sleep(2000)
     ; Close by script name so a reloaded drum script is closed too.
     while WinExist("CloneHero-DrumKeys.ahk ahk_class AutoHotkey")
         WinClose()
