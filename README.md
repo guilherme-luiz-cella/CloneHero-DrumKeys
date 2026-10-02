@@ -6,7 +6,7 @@ Clone Hero shares one key map across instruments, so each drum pad uses the guit
 
 ## Files
 
-- `CloneHero-DrumKeys.ahk`: while drum mode is on, remaps A S J K so they hit drum lanes 1 to 4 from left to right. L (kick/orange) is unchanged. Drum mode is detected automatically from the strikers at the bottom of the screen (green right of red means drums). F1 toggles auto-detect.
+- `CloneHero-DrumKeys.ahk`: while drum mode is on, remaps A S J K so they hit drum lanes 1 to 4 from left to right. L (kick/orange) is unchanged. Drum mode is detected automatically from where the green striker sits on the highway (right side means drums). F1 toggles auto-detect, F2 shows what the detector sees.
 - `CloneHero-Watcher.ahk`: runs at Windows startup, starts the drum keys script when `Clone Hero.exe` opens and closes it when the game exits.
 
 ## Setup
